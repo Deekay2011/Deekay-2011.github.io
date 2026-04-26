@@ -1,0 +1,83 @@
+#contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    gap: 5px;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+
+input, textarea {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+
+input:focus, textarea:focus {
+    border-color: #1F5C99;
+    outline: none;
+    box-shadow: 0 0 5px rgba(31, 92, 153, 0.3);
+}
+
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+
+.error-msg {
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+
+input:invalid ~ .error-msg,
+textarea:invalid ~ .error-msg {
+    display: block;
+}
+
+
+input[type="file"] {
+    border: 2px dashed #aaa;
+    padding: 8px;
+    background: #fff;
+    cursor: pointer;
+}
+
+
+.btn-submit {
+    background: #1F5C99;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: #2E75B6;
+}

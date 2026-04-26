@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact</title>
+
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/forms.css">
+</head>
+
+<body>
+
+
+<nav role="navigation" aria-label="Main site navigation">
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+<main>
+
+<h1>Contact Me</h1>
+
+<form id="contact-form" novalidate>
+
+  
+    <div class="form-group">
+        <label for="name">Full Name <span class="required">*</span></label>
+        <input type="text" id="name" name="name"
+               placeholder="e.g. Website Design"
+               required minlength="2">
+        <span class="error-msg">Please enter your full name (at least 2 characters).</span>
+    </div>
+
+    
+    <div class="form-group">
+        <label for="email">Email Address <span class="required">*</span></label>
+        <input type="email" id="email" name="email"
+               placeholder="e.g. website@email.com"
+               required>
+        <span class="error-msg">Please enter a valid email address.</span>
+    </div>
+
+    
+    <div class="form-group">
+        <label for="subject">Subject <span class="required">*</span></label>
+        <input type="text" id="subject" name="subject"
+               placeholder="What is this message about?"
+               required minlength="3">
+        <span class="error-msg">Please enter a subject (at least 3 characters).</span>
+    </div>
+
+    
+    <div class="form-group">
+        <label for="message">Message <span class="required">*</span></label>
+        <textarea id="message" name="message"
+                  placeholder="Write your message here..."
+                  rows="6"
+                  required minlength="10"></textarea>
+        <span class="error-msg">Please write a message (at least 10 characters).</span>
+    </div>
+
+    
+    <div class="form-group">
+        <label for="attachment">Attach a File (optional)</label>
+        <input type="file" id="attachment" name="attachment"
+               accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+               aria-describedby="file-hint">
+
+        <small id="file-hint" class="field-hint">
+            Accepted: PDF, Word documents, JPEG, PNG. Maximum size: 5 MB.
+        </small>
+
+        <span class="error-msg" id="file-error">
+            File is too large or the file type is not allowed.
+        </span>
+    </div>
+
+    
+    <button type="submit" class="btn-submit">Send Message</button>
+
+</form>
+
+</main>
+<script src="../js/script.js"></script>
+
+</body>
+</html>
